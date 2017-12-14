@@ -52,10 +52,6 @@ def get_gaze_ranges(gazes):
             max_x = max(gaze, key=lambda x: x[1])[1]
             min_y = min(gaze, key=lambda x: x[2])[2]
             max_y = max(gaze, key=lambda x: x[2])[2]
-            if (min_x > max_x):
-                print 'whaaa?', gaze
-            if (min_y > max_y):
-                print 'whaaa? again', gaze
             ranges.append([
                 min_x,
                 max_x,
